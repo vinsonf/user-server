@@ -1,7 +1,8 @@
 const baseUrl = "http://localhost:3000";
 
-let base = "";
+let base = "/Users";
 let filterDate = "2021-06-01";
+
 getFiles();
 function getFiles() {
   document.body.innerHTML = `
