@@ -2,6 +2,12 @@ import express from 'express';
 import path from 'path';
 import fs from 'fs';
 import cors from 'cors';
+import * as atobI from 'atob';
+
+global.atob = atobI.default;
+
+import mysql from 'mysql';
+
 const __dirname = path.resolve();
 const app = express();
 app.use(cors());
