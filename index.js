@@ -10,6 +10,57 @@ app.get('/', (req, res) => {
     res.send('Hello World!');
 });
 
+
+
+
+
+app.listen(3000, () => {
+    console.log('Example app listening on port 3000!');
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 app.post('/list-files', (req, res) => {
     const base = req.body.base || path.join(__dirname,'./files');
     const filterDate = req.body.filterDate || '2022-06-01';
@@ -84,7 +135,3 @@ app.get('/send/:id', (req, res) => {
 });
 
 
-
-app.listen(3000, () => {
-    console.log('Example app listening on port 3000!');
-});
